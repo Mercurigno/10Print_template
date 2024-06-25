@@ -1,5 +1,5 @@
 // Dichiarazione della variabile globale per la dimensione dei rettangoli
-let size = 40; // Dimensione dei rettangoli
+let size = 80; // Aumentata la dimensione dei rettangoli
 
 function setup() {
   // Crea una canvas che occupa l'intera finestra del browser
@@ -25,6 +25,7 @@ function drawGrid() {
 
       // Imposta il colore di riempimento del rettangolo con i valori RGB generati
       fill(r, g, b);
+      noStroke(); // Rimuove il bordo del rettangolo
       
       // Disegna un rettangolo alle coordinate (x, y) con dimensioni size x size
       rect(x, y, size, size);
@@ -38,7 +39,7 @@ function drawGrid() {
       let lettera = String.fromCharCode(random(65, 91)); // Codice ASCII per lettere maiuscole
       
       // Disegna il testo al centro del rettangolo corrente
-      text(lettera, x + size/2, y + size/2);
+      text(lettera, x + size / 2, y + size / 2);
     }
   }
 }

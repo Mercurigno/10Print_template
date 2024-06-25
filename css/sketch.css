@@ -5,7 +5,7 @@
   /* Colors */
   --bg-color: rgb(255, 255, 255);
   --text-color: rgb(0, 0, 0);
-  --link-color: rgb(195, 0, 255);
+  --link-color: rgb(0, 0, 255);
  
   /* Typographic Scale */
   --ratio: 1.333;
@@ -22,7 +22,7 @@
 
 body{
   font-size: var(--text-base);
-  font-family: 'Roboto Mono' ;
+  font-family: 'Montserrat' ;
   line-height: var(--ratio);
   background: var(--bg-color);
 }
@@ -89,6 +89,10 @@ a {
   padding: var(--spacer);
   z-index: 2;
   background: var(--bg-color);
+}
+
+.info-name{
+  font-weight:bold;
 }
 
 .info-list{

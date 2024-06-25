@@ -17,8 +17,8 @@ function draw() {
   strokeWeight(2); // Imposta lo spessore del tratto a 2 pixel
   stroke(r, g, b); // Imposta il colore del tratto in base ai valori RGB generati
 
-  // Decide casualmente se disegnare una X, un quadrato, un'ellisse, una croce o un triangolo
-  let choice = random(5); // Genera un numero casuale tra 0 (incluso) e 5 (escluso)
+  // Decide casualmente se disegnare una X, un quadrato, un'ellisse o un triangolo
+  let choice = random(4); // Genera un numero casuale tra 0 (incluso) e 4 (escluso)
   if (choice < 1) {
     // Disegna una X
     line(x, y, x + size, y + size); // Linea da (x, y) a (x + size, y + size)
@@ -29,10 +29,6 @@ function draw() {
   } else if (choice < 3) {
     // Disegna un'ellisse
     ellipse(x + size / 2, y + size / 2, size * 0.8); // Ellisse centrata in (x + size/2, y + size/2) con dimensioni size*0.8
-  } else if (choice < 4) {
-    // Disegna una croce
-    line(x, y + size / 2, x + size, y + size / 2); // Linea orizzontale al centro
-    line(x + size / 2, y, x + size / 2, y + size); // Linea verticale al centro
   } else {
     // Disegna un triangolo
     triangle(x + size / 2, y, x, y + size, x + size, y + size); // Triangolo con vertici in (x + size/2, y), (x, y + size), (x + size, y + size)

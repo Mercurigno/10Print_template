@@ -16,7 +16,7 @@ function setup() {
 }
 
 function drawPattern() {
-  // Reimposta lo sfondo del canvas a bianco, cancellando eventuali disegni precedenti
+  // Reimposta lo sfondo della canvas a bianco, cancellando eventuali disegni precedenti
   background(255);
   
   // Definisce il numero di cerchi da disegnare
